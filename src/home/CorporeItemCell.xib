@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CorporeItemCell" customModule="dakuofu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="109.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ocS-D8-oNH">
+                        <rect key="frame" x="20" y="7" width="120" height="90"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="90" id="dGI-O2-bj1"/>
+                            <constraint firstAttribute="width" constant="120" id="tpb-Ps-brW"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 1, 2000,000.00" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8mv-1k-zvY">
+                        <rect key="frame" x="150" y="38" width="162" height="20"/>
+                        <accessibility key="accessibilityConfiguration" identifier="A245F0DD-E7CE-452D-A582-2291E94CCE88"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="zT2-Od-Cg5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" red="0.8901960784313725" green="0.32549019607843138" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L0y-mc-6lz" customClass="RoundedButton" customModule="dakuofu" customModuleProvider="target">
+                        <rect key="frame" x="150" y="73" width="50" height="24"/>
+                        <accessibility key="accessibilityConfiguration" identifier="62EF731F-7270-4B24-B143-23D3D0C55A87"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="24" id="3VR-wX-H41"/>
+                            <constraint firstAttribute="width" constant="50" id="XNT-T1-BkA"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="机动车">
+                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="normalBgColor">
+                                <color key="value" red="1" green="0.80000001190000003" blue="0.73725491759999995" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="奔驰 S600" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Kr-Vk-cqt">
+                        <rect key="frame" x="150" y="8" width="162" height="20"/>
+                        <accessibility key="accessibilityConfiguration" identifier="4382CF70-D338-4360-8B14-A319C5064B4F-46549-00013D58162032A0"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="FDu-iU-dxD"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.20000000000000001" green="0.20000000000000001" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="8mv-1k-zvY" firstAttribute="top" secondItem="2Kr-Vk-cqt" secondAttribute="bottom" constant="10" id="AKP-Ng-6jd"/>
+                    <constraint firstItem="8mv-1k-zvY" firstAttribute="leading" secondItem="ocS-D8-oNH" secondAttribute="trailing" constant="10" id="HKL-oO-Iiv"/>
+                    <constraint firstAttribute="trailing" secondItem="8mv-1k-zvY" secondAttribute="trailing" constant="8" id="Kob-kv-6sP"/>
+                    <constraint firstItem="L0y-mc-6lz" firstAttribute="top" secondItem="8mv-1k-zvY" secondAttribute="bottom" constant="15" id="LYg-Px-pwH"/>
+                    <constraint firstItem="2Kr-Vk-cqt" firstAttribute="leading" secondItem="ocS-D8-oNH" secondAttribute="trailing" constant="10" id="Xyh-OD-SXP"/>
+                    <constraint firstItem="2Kr-Vk-cqt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="Yk6-B3-wUJ"/>
+                    <constraint firstAttribute="bottom" secondItem="L0y-mc-6lz" secondAttribute="bottom" constant="12.5" id="gUF-sw-eBv"/>
+                    <constraint firstItem="ocS-D8-oNH" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="7" id="m6r-jw-3Zs"/>
+                    <constraint firstAttribute="trailing" secondItem="2Kr-Vk-cqt" secondAttribute="trailing" constant="8" id="pxC-DZ-moN"/>
+                    <constraint firstItem="L0y-mc-6lz" firstAttribute="leading" secondItem="ocS-D8-oNH" secondAttribute="trailing" constant="10" id="rxw-cg-3vU"/>
+                    <constraint firstItem="ocS-D8-oNH" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="vm8-sZ-08W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="priceLabel" destination="8mv-1k-zvY" id="a78-2c-SD2"/>
+                <outlet property="tagButton" destination="L0y-mc-6lz" id="vYh-oA-Xp6"/>
+                <outlet property="thumbinalView" destination="ocS-D8-oNH" id="lSW-Ot-v6F"/>
+                <outlet property="titleLabel" destination="2Kr-Vk-cqt" id="jq1-oC-Gq7"/>
+            </connections>
+            <point key="canvasLocation" x="258" y="250"/>
+        </tableViewCell>
+    </objects>
+</document>

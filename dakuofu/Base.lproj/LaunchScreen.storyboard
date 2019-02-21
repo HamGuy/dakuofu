@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="我 们 只 做 服 务" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TYz-B4-nGL">
+                                <rect key="frame" x="167" y="157" width="266" height="50"/>
+                                <accessibility key="accessibilityConfiguration" identifier="14118A78-A773-4F89-9FC6-FB2C0484FC94"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AJX-eM-NR1"/>
+                                    <constraint firstAttribute="width" constant="266" id="Cjq-CV-apM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="版权所有 @ dakuofu.cn" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qi-YC-vz7">
+                                <rect key="frame" x="149" y="537" width="303" height="33"/>
+                                <accessibility key="accessibilityConfiguration" identifier="EDD12EBA-D360-490D-B3C9-840E20AC9C6A"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="33" id="0Mv-EX-vSv"/>
+                                    <constraint firstAttribute="width" constant="303" id="ggO-Dm-jVY"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFangSC-Regular" pointSize="12"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="slogon2" translatesAutoresizingMaskIntoConstraints="NO" id="LYt-jj-qWH">
+                                <rect key="frame" x="90" y="70" width="420" height="77"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="420" id="jZv-75-Znu"/>
+                                    <constraint firstAttribute="height" constant="77" id="m1C-n3-7TF"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.8901960784313725" green="0.32549019607843138" blue="0.32941176470588235" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="BB9CA9CE-40F0-4130-A56F-3BF44FE77D04"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="1Qi-YC-vz7" secondAttribute="bottom" constant="30" id="9ze-kG-bR7"/>
+                            <constraint firstItem="1Qi-YC-vz7" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="CVp-Ba-jm3"/>
+                            <constraint firstItem="TYz-B4-nGL" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" constant="167" id="FnR-zf-SfY"/>
+                            <constraint firstItem="LYt-jj-qWH" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Roj-Oz-kSz"/>
+                            <constraint firstItem="LYt-jj-qWH" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="50" id="i82-vV-C4r"/>
+                            <constraint firstAttribute="trailing" secondItem="TYz-B4-nGL" secondAttribute="trailing" constant="167" id="j8v-n3-LUR"/>
+                            <constraint firstItem="TYz-B4-nGL" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="vBb-uK-OaT"/>
+                            <constraint firstItem="TYz-B4-nGL" firstAttribute="top" secondItem="LYt-jj-qWH" secondAttribute="bottom" constant="10" id="zKP-l1-fUM"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="FnR-zf-SfY"/>
+                                <exclude reference="j8v-n3-LUR"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="242" y="86"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="slogon2" width="280" height="51"/>
+    </resources>
+</document>

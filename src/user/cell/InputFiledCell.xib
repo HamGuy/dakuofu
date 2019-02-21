@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="InputFiledCell" customModule="dakuofu" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="49.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="hAj-Vg-lmg">
+                        <rect key="frame" x="10" y="10" width="30" height="30"/>
+                        <color key="backgroundColor" red="1" green="0.80000000000000004" blue="0.73725490196078436" alpha="1" colorSpace="calibratedRGB"/>
+                        <accessibility key="accessibilityConfiguration" identifier="4AAA0460-9C72-4E0A-9B17-60887933DBA0-46549-00013D558352310C"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="WHl-bW-p0W"/>
+                            <constraint firstAttribute="height" constant="30" id="pha-AG-H1Z"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5Tz-5a-OMV" customClass="UIMaterialTextField" customModule="dakuofu" customModuleProvider="target">
+                        <rect key="frame" x="60" y="10" width="245" height="30"/>
+                        <color key="textColor" red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                </subviews>
+                <color key="backgroundColor" red="0.97647058823529409" green="0.97647058823529409" blue="0.97647058823529409" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="hAj-Vg-lmg" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="AaR-QD-aAc"/>
+                    <constraint firstItem="5Tz-5a-OMV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="BD4-kk-glQ"/>
+                    <constraint firstAttribute="bottom" secondItem="5Tz-5a-OMV" secondAttribute="bottom" constant="9.5" id="id4-uR-uV9"/>
+                    <constraint firstAttribute="trailing" secondItem="5Tz-5a-OMV" secondAttribute="trailing" constant="15" id="qxG-mY-Kuu"/>
+                    <constraint firstItem="hAj-Vg-lmg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="u4m-ea-VQw"/>
+                    <constraint firstItem="5Tz-5a-OMV" firstAttribute="leading" secondItem="hAj-Vg-lmg" secondAttribute="trailing" constant="20" id="vcJ-3E-Ngz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconView" destination="hAj-Vg-lmg" id="HJL-qQ-OpL"/>
+                <outlet property="textField" destination="5Tz-5a-OMV" id="Sj4-CC-pr8"/>
+            </connections>
+            <point key="canvasLocation" x="336" y="307"/>
+        </tableViewCell>
+    </objects>
+</document>
